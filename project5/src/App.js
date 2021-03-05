@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React, { Component } from "react";
 import './App.css';
+import {Route, Link} from "react-router-dom";
+import RandomJoke from './RandomJoke';
 
-function App() {
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state ={
+      oldJokes: []
+    }
+  }
+handleJoke =(joke)=>{
+  console.log(joke)
+  this.setState({joke: joke});
+
+}
+// function App() {
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>waka waka</h1> 
+     <RandomJoke joke={this.state.joke}handleJoke={(joke)=>this.handleJoke(joke)}/>
+     
     </div>
   );
+  }
+// }
 }
-
 export default App;
