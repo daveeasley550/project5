@@ -1,19 +1,83 @@
+#root{
+  margin: 0 auto;
+  display: flex;
+  /* border: solid red 3px; */
+  height: 100vh;
+  max-width: 1000px;
+  background: url(https://img.texasmonthly.com/2012/01/chucknorris.png?auto=compress&crop=faces&fit=fit&fm=jpg&h=0&ixlib=php-1.2.1&q=45&w=1120)center center no-repeat fixed;
+
+}
 .App {
+  margin: 0 auto;
+  background-size: cover;
+  display: block;
   text-align: center;
+  /* background: olivedrab; */
+  max-height: 100vh;
+  max-width: 1000px;
+  /* color: gold; */
+  
+  
+}
+.joke{
+margin-top: 50px;
+color: gold;
+font-size: 30px;
+text-shadow: black  1px 0 10px;
+max-width: 1000px;
+}
+.title {
+  margin-top: 100px;
+  text-shadow: black  2px 0 10px;
+  color: gold;
+  font-size: 30px;
+}
+.button{
+  margin-top: 100px;
+  display: flex;
   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.previous{
+  display: inline-block;
+  /* flex-direction:column; */
+  margin: 0 auto;
+  background:darkgoldenrod;
+  border-left: solid red;
+  border-right: solid red;
+  border-top: solid blue;
+  border-bottom: solid blue;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.next{
+  display: inline-block;
+  /* flex-direction: column-reverse; */
+  margin: 0 auto;
+  background-color:darkgoldenrod;
+  border-left: solid red;
+  border-right: solid red;
+  border-top: solid blue;
+  border-bottom: solid blue;
+  
+  
 }
-
+.inputs{
+  margin-top: 50px;
+  display: inline-block;
+  /* margin: 0 auto; */
+  /* background-color:darkgoldenrod; */
+  border-left: solid red;
+  border-right: solid red;
+  border-top: solid blue;
+  border-bottom: solid blue;
+}
+.name{
+  display: inline-block;
+  border-left: solid red;
+  border-right: solid red;
+  border-top: solid blue;
+  border-bottom: solid blue;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -25,7 +89,4 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 

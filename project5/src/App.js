@@ -71,13 +71,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="title">
         <h1>Charles Norris</h1>
+        </div>
+        <div className="button">
+        <div className="previous">
         <button onClick={this.previousJoke}>Previous Joke</button>
+        </div>
+        <div className="next">
         <button onClick={this.handleJoke}>Next Joke</button>
-        <RandomJoke joke={this.state.joke} />
+        </div>
+        </div>
+        <div className="joke">
+        <RandomJoke joke={this.state.joke}/>
+        </div>
+        <div className="inputs">
         <input type="text" onChange={this.handleFirstName} placeholder="First Name"/>
         <input type="text" onChange={this.handleLastName} placeholder="Last Name"/>
+        </div>
+        <div className="name">
         <button onClick={this.nameJoke}>New Name Joke</button>
+        </div>
       </div>
     );
   }
